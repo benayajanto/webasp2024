@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="dc18734c9f03471ab43bdb1e82beb4e1" Name="Diagram1" ZoomLevel="83">
+        <EntityTypeShape EntityType="Database1Model.Cart" Width="1.5" PointX="6" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.MakeUpBrand" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.Makeup" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.MakeupType" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.TransactionDetail" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.TransactionHeader" Width="1.5" PointX="3" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.User" Width="1.5" PointX="0.75" PointY="7.625" IsExpanded="true" />
+        <AssociationConnector Association="Database1Model.FK_Carts_To_Makeups" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK_Carts_To_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK_Makeups_To_MakeupBrands" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK_Makeups_To_MakeupTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK_TransactionDetail_To_Makeups" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK_TransactionDetail_To_Transaction" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK_TransactionHeader_To_Users" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

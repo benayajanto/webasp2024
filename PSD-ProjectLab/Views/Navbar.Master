@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Navbar.master.cs" Inherits="PSD_ProjectLab.Views.Navbar" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Panel ID="CustomerPanel" runat="server" Visible="false">
+                <asp:Button ID="home_btn" runat="server" Text="Home" OnClick="home_btn_Click"/>
+                <asp:Button ID="order_btn" runat="server" Text="Order Makeup" OnClick="order_btn_Click" />
+                <asp:Button ID="history_btn" runat="server" Text="History" OnClick="history_btn_Click"/>
+                <asp:Button ID="profile_btn" runat="server" Text="Profile" OnClick="profile_btn_Click"/>
+                <asp:Button ID="logout_btn" runat="server" Text="Logout" OnClick="logout_btn_Click"/>
+            </asp:Panel>
+            <asp:Panel ID="AdminPanel" runat="server" Visible="false">
+                <asp:Button ID="Button1" runat="server" Text="Home" OnClick="home_btn_Click"/>
+                <asp:Button ID="manage_btn" runat="server" Text="Manage Makeup" OnClick="manage_btn_Click"/>
+                <asp:Button ID="orderqueue_btn" runat="server" Text="Order Queue" OnClick="orderqueue_btn_Click"/>
+                <asp:Button ID="Button3" runat="server" Text="History"  OnClick="history_btn_Click"/>
+                <asp:Button ID="Button2" runat="server" Text="Profile" OnClick="profile_btn_Click" />
+                <asp:Button ID="transaction_btn" runat="server" Text="Transaction Report" OnClick="transaction_btn_Click"/>
+                <asp:Button ID="logout_btn2" runat="server" Text="Logout" OnClick="logout_btn_Click"/>
+            </asp:Panel>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+    </form>
+</body>
+</html>
